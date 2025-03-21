@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kaamil Portfolio</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <video class="back-vid" loop autoplay muted plays-inline
+                src="videos/galaxy.mp4" type="video/mp4"></video>
+            <header>
+                <div class="left">
+                    <img src="images/logo.png" alt="logo">
+                    <h1><span class="gradient">Kaamil's</span>
+                        Portfolio</h1>
+                </div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+                <div class="box-icons">
+                    <a
+                        href="https://www.linkedin.com/in/kaamil-savla-694ab8225/"
+                        target="_blank"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/kaamil-s" target="_blank"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/kaamil_savla/"
+                        target="_blank"><i class='bx bxl-instagram'></i></a>
+                </div>
+
+            </header>
+            <div class="blackhole-box">
+                <video loop autoplay muted plays-inline
+                    src="videos/blackhole.mp4" type="video/mp4"></video>
+            </div>
+
+            <section class="hero">
+                <div class="hero-info">
+                    <h1>Pixels <span class="gradient ">Flow.</span> </h1>
+                    <h1> &emsp; &ensp; &ensp; Ideas <span
+                            class="gradient ">Grow.</span> </h1>
+                    <h2>Hi, I'm <span class="gradient ">Kaamil</span></h2>
+                    <p>a Computer Science Engineering student passionate about
+                        Data Analysis, Web Development and Creative
+                        Solutions.</p>
+                    <button><i class='bx bxs-send'></i> Contact Me</button>
+
+                </div>
+                <div class="hero-model">
+                    <model-viewer id="m1"
+                        src="assets/thor__marvel_rivals.glb" auto-rotate
+                        camera-controls autoplay
+                        style="width: 100%; height: 100%;"></model-viewer>
+                </div>
+
+                <div class="animation-controls">
+
+                </div>
+            </section>
+
+            <section class="info-section" id="about">
+                <h1 class="section-title">Hello, There 👋🏼 </h1>
+                <div class="info-cards">
+                    <div class="card">
+                        <h1>Hi there, I am Kaamil</h1>
+                        <p> Driven by curiosity and a love for learning, I'm
+                            excited to take on new challenges and create
+                            impactful projects.
+                        </p>
+                        <img src="images/kaamil.jpg" alt="card-image">
+                    </div>
+
+                    <div class="card">
+                        <h1>Tech Stack</h1>
+                        <p> I have experience in Python, SQL, C++, HTML, and
+                            CSS, along with tools like VS Code, Power BI, and
+                            Canva.
+                        </p>
+                        <img src="images/grid2.png" alt="card-image">
+                    </div>
+
+                    <div class="card">
+                        <h1>Based in India</h1>
+                        <p> I am from Chhindwara, Madhya Pradesh, India.
+                            Currently living in Chandigarh</p>
+                        <video autoplay loop muted plays-inline
+                            src="videos/glob.mp4" type="video/mp4"
+                            alt="card-video">
+                        </div>
+
+                        <div class="card">
+                            <h1>Education</h1>
+                            <p>Chandigarh University, India (2021-25) <br>
+                                Bachelor's
+                                in Computer Science & Engineering </p>
+                            <img src="images/cu copy.jpg" alt="card-image">
+
+                        </div>
+
+                    </div>
+
+                    <a href="/assets/resume.pdf" download="Kaamil_Resume.pdf">
+                        <button class="button-box">Download Resume</button>
+                    </a>
+
+                </section>
+
+                <section class="my-projects" id="projects">
+                    <h1 class="section-title"> My Projects 👨🏻‍💻</h1>
+                    <div class="project-card">
+                        <div class="project-box">
+                            <img src="images/Marvel_ss.png">
+
+                        </div>
+                        <div class="project-info">
+                            <h1><span
+                                    class="gradient ">Marvel Movies</span> Data
+                                Analysis</h1>
+                            <p>Analyzed Marvel movie datasets to generate
+                                insights on box office performance, audience
+                                ratings, and trends.
+                                Built an interactive Power BI Web dashboard to
+                                visualize key statistics, improving
+                                accessibility and data
+                                exploration.</p>
+                            <button
+                                onclick="window.open('https://github.com/kaamil-s/Marvel-Movies-Data-Analysis','_blank')"><i
+                                    class='bx bx-link-external'></i> View
+                                Project</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-box">
+                            <video src="videos/project3.mp4"></video>
+                        </div>
+                        <div class="project-info">
+                            <h1><span
+                                    class="gradient ">Gesture Controlled</span>
+                                Media Player</h1>
+                            <p>Developed a native Windows app to control desktop
+                                media (YouTube, VLC) using user gestures.
+                                Implemented AIML for accurate gesture
+                                recognition with 300ms latency for smooth media
+                                control.</p>
+                            <button
+                                onclick="window.open('https://github.com/kaamil-s/Gesture-Controlled-Media-Player','_blank')"><i
+                                    class='bx bx-link-external'></i> View
+                                Project</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-box">
+                            <img src="images/Superstore.png">
+                        </div>
+                        <div class="project-info">
+                            <h1><span
+                                    class="gradient ">Supermart Sales</span>
+                                Dashboard</h1>
+                            <p>Created a sales dashboard for a supermarket using
+                                Power BI to visualize key metrics and trends.
+                                Performed basic sales forecasting to predict
+                                future sales based on historical data.</p>
+                            <button
+                                onclick="window.open('https://app.powerbi.com/view?r=eyJrIjoiOGMyM2Q2YTEtMDE1YS00ZjYxLTllMTMtZGFlNzFkMWFlNTg0IiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9','_blank')"><i
+                                    class='bx bx-link-external'></i> View
+                                Project</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-box">
+                            <img src="images/jungle.png">
+                        </div>
+                        <div class="project-info">
+                            <h1><span
+                                    class="gradient ">Jungle Chalo </span> - A
+                                Wildlife Travel Website</h1>
+                            <p>Designed a front-end website to promote wildlife
+                                tourism in India.
+                                Focused on creating an interactive and visually
+                                appealing user interface for tourists.</p>
+                            <button
+                                onclick="window.open('https://github.com/kaamil-s/JungleChalo','_blank')"><i
+                                    class='bx bx-link-external'></i> View
+                                Project</button>
+                        </div>
+                    </div>
+
+                    <button class="button-box"
+                        onclick="window.open('https://github.com/kaamil-s','_blank')">More
+                        Projects</button>
+
+                </section>
+
+                <section class="skills-section" id="skills">
+                    <h1 class="section-title"> Skills 🛠</h1>
+                    <div class="skills-box">
+                        <img class="skills-image" src="images/digital brain.png"
+                            alt="skill-image">
+
+                        <div class="Tools">
+                            <h1 class="gradient">Tools <i
+                                    class='bx bx-laptop'></i></h1>
+                            <p>I am skilled in tools like VS Code, Power BI and
+                                Canva, which I use to code efficiently, create
+                                data
+                                visualizations, and design impactful visuals.
+                                These
+                                tools help me streamline my workflow and deliver
+                                effective solutions.</p>
+                        </div>
+
+                        <div class="Languages">
+                            <h1 class="gradient">Languages <i
+                                    class='bx bxs-keyboard'></i></h1>
+                            <p>On the technical side, I have experience with
+                                languages such as Python, SQL, C++, HTML and
+                                CSS.</p>
+                        </div>
+
+                        <div class="Frameworks-Libraries">
+                            <h1 class="gradient">Frameworks/Libraries <i
+                                    class='bx bx-code-block'></i></h1>
+                            <p> I also work with frameworks like PyQt5, OpenCV
+                                and TensorFlow to develop applications, enhance
+                                computer vision projects and build AI
+                                models.</p>
+                        </div>
+
+                        <div class="Soft-Skills">
+                            <h1 class="gradient">Soft Skills <i
+                                    class='bx bx-network-chart'></i></h1>
+                            <p> I value work ethics and teamwork, ensuring
+                                collaboration and effective communication. With
+                                active listening and critical thinking skills, I
+                                adapt well to challenges and make informed
+                                decisions.</p>
+                        </div>
+
+                        <div class="slider" reverse="true" style="
+                        --width: 100px;
+                        --height: 100px;
+                        --quantity: 8;
+                        ">
+                            <div class="list">
+                                <div class="item" style="--position: 1;"><img
+                                        src="images/1.png"
+                                        alt="slider-image"></div>
+                                <div class="item" style="--position: 2;"><img
+                                        src="images/2.png"
+                                        alt="slider-image"></div>
+                                <div class="item" style="--position: 3;"><img
+                                        src="images/3.png"
+                                        alt="slider-image"></div>
+                                <div class="item" style="--position: 4;"><img
+                                        src="images/4.png"
+                                        alt="slider-image"></div>
+                                <div class="item" style="--position: 5;"><img
+                                        src="images/5.png"
+                                        alt="slider-image"></div>
+                                <div class="item" style="--position: 6;"><img
+                                        src="images/6.png"
+                                        alt="slider-image"></div>
+                                <div class="item" style="--position: 7;"><img
+                                        src="images/7.png"
+                                        alt="slider-image"></div>
+                                <div class="item" style="--position: 8;"><img
+                                        src="images/8.png"
+                                        alt="slider-image"></div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-section">
+                    <h1 class="section-title">Let's Connect 🫱🏻‍🫲🏽</h1>
+                    <div class="social-box">
+
+                        <img src="images/logo.png" alt="logo">
+                        <a href="#"><i class='bx bxs-phone-call'></i> +91
+                            9424962700</a>
+                        <a href="#"><i class='bx bx-mail-send'></i>
+                            savlakaamil@gmail.com</a>
+
+                        <div class="social-icons">
+                            <a
+                                href="https://www.linkedin.com/in/kaamil-savla-694ab8225/"
+                                target="_blank"><i
+                                    class='bx bxl-linkedin-square'></i></a>
+                            <a href="https://github.com/kaamil-s"
+                                target="_blank"><i
+                                    class='bx bxl-github'></i></a>
+                            <a href="https://www.instagram.com/kaamil_savla/"
+                                target="_blank"><i
+                                    class='bx bxl-instagram'></i></a>
+                            <a href="https://x.com/KaamilSavla"
+                                target="_blank"><i
+                                    class='bx bxl-twitter'></i></a>
+                            <a href="https://in.pinterest.com/kaamil_s/"
+                                target="_blank"><i
+                                    class='bx bxl-pinterest'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <p>Have a project in mind or just want to say Hi? <br>
+                            Feel
+                            free to reach out to me. I'm always open to new
+                            opportunities and collaborations.</p>
+                        <p>Name</p>
+                        <input type="text" placeholder="Enter your name">
+
+                        <p>Email</p>
+                        <input type="email" placeholder="Enter your email">
+
+                        <p>Message</p>
+                        <textarea placeholder="Enter your message"></textarea>
+
+                        <button class="button-box"> <i class='bx bx-send'></i>
+                            Send
+                            Message</button>
+
+                    </div>
+                </section>
+
+                <footer>
+                    <p>Copyright <span
+                            style="font-size: 20px; color: #727fde">©</span>
+                        Kaamil,
+                        Made with ♥️ by Kaamil Savla</>
+
+                    </footer>
+                </div>
+                <script
+                    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <script src="app.js"></script>
+                <script type="module"
+                    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+            </html>
