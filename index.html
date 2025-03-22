@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/fav.png">
         <title>Kaamil Portfolio</title>
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -58,7 +59,11 @@
                     <p>a Computer Science Engineering student passionate about
                         Data Analysis, Web Development and Creative
                         Solutions.</p>
-                    <button><i class='bx bxs-send'></i> Contact Me</button>
+                    <a href="#contact">
+                        <button>
+                            <i class='bx bxs-send'></i> Contact Me
+                        </button>
+                    </a>
 
                 </div>
                 <div class="hero-model">
@@ -96,8 +101,11 @@
 
                     <div class="card">
                         <h1>Based in India</h1>
-                        <p> I am from Chhindwara, Madhya Pradesh, India.
-                            Currently living in Chandigarh</p>
+                        <h2>"A journey of a thousand miles begins with a single step."
+                            <br>– Lao Tzu</h2>
+                        <p> Originally from Chhindwara, Madhya Pradesh, but
+                            currently residing in Chandigarh, Punjab.</p>
+
                         <video autoplay loop muted plays-inline
                             src="videos/glob.mp4" type="video/mp4"
                             alt="card-video">
@@ -105,9 +113,10 @@
 
                         <div class="card">
                             <h1>Education</h1>
-                            <p>Chandigarh University, India (2021-25) <br>
-                                Bachelor's
-                                in Computer Science & Engineering </p>
+                            <h2>Chandigarh University, India</h2>
+                            <p>Bachelor's in Computer Science & Engineering
+                                (2021-25) </p>
+
                             <img src="images/cu copy.jpg" alt="card-image">
 
                         </div>
@@ -147,7 +156,7 @@
 
                     <div class="project-card">
                         <div class="project-box">
-                            <video src="videos/project3.mp4"></video>
+                            <img src="images/Gesture.png">
                         </div>
                         <div class="project-info">
                             <h1><span
@@ -284,13 +293,13 @@
                                 <div class="item" style="--position: 8;"><img
                                         src="images/8.png"
                                         alt="slider-image"></div>
-                            
+
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="contact-section">
+                <section class="contact-section" id="contact">
                     <h1 class="section-title">Let's Connect 🫱🏻‍🫲🏽</h1>
                     <div class="social-box">
 
@@ -325,7 +334,9 @@
                             Feel
                             free to reach out to me. I'm always open to new
                             opportunities and collaborations.</p>
-                        <p>Name</p>
+
+                        <!--
+                            <p>Name</p>
                         <input type="text" placeholder="Enter your name">
 
                         <p>Email</p>
@@ -337,8 +348,75 @@
                         <button class="button-box"> <i class='bx bx-send'></i>
                             Send
                             Message</button>
+                            <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeKJ0viaMArx1zudSBYI9DQA47Bp2msTvC9NurqWUaldcDhcw/viewform?embedded=true"
+                            width="640" height="800" frameborder="0"
+                            marginheight="0" marginwidth="0">Loading…</iframe>
+
+                            <form
+                            action="https://docs.google.com/forms/d/e/1FAIpQLSeKJ0viaMArx1zudSBYI9DQA47Bp2msTvC9NurqWUaldcDhcw/formResponse"
+                            method="POST" target="_blank">
+
+                            <p>Your Name</p>
+                            <input type="text" name="entry.393917752"
+                                placeholder="Enter your name" required>
+
+                            <p>Your Email</p>
+                            <input type="email" name="entry.1358552951"
+                                placeholder="Enter your email" required>
+
+                            <p>Message</p>
+                            <textarea name="entry.1297132729"
+                                placeholder="Enter your message"
+                                required></textarea>
+
+                            <button type="submit" class="button-box">
+                                <i class='bx bx-send'></i> Send Message
+                            </button>
+                        </form>
+                        -->
+
+                        <form id="googleForm">
+                            <p>Your Name</p>
+                            <input type="text" name="entry.393917752" id="name"
+                                placeholder="Enter your name" required>
+
+                            <p>Your Email</p>
+                            <input type="email" name="entry.1358552951"
+                                id="email" placeholder="Enter your email"
+                                required>
+
+                            <p>Message</p>
+                            <textarea name="entry.1297132729" id="message"
+                                placeholder="Enter your message"
+                                required></textarea>
+
+                            <button type="submit" class="button-box">
+                                <i class='bx bx-send'></i> Send Message
+                            </button>
+                        </form>
+
+                        <script>
+                        document.getElementById("googleForm").addEventListener("submit", function(e) {
+                            e.preventDefault(); // Prevent default form submission
+                        
+                            let formData = new FormData(this); // Automatically capture all fields
+                        
+                            fetch("https://docs.google.com/forms/d/e/1FAIpQLSeKJ0viaMArx1zudSBYI9DQA47Bp2msTvC9NurqWUaldcDhcw/formResponse", {
+                                method: "POST",
+                                body: formData,
+                                mode: "no-cors" // Prevents CORS errors
+                            }).then(() => {
+                                // Show success message
+                                document.getElementById("googleForm").innerHTML = "<p><br>Thank you! <br>Your message has been sent.</p>";
+                            }).catch((error) => {
+                                console.error("Error!", error);
+                            });
+                        });
+                        </script>
 
                     </div>
+
                 </section>
 
                 <footer>
