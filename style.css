@@ -9,6 +9,50 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Full-screen loader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    color: white;
+}
+
+/* Loader heading */
+.preloader h1 {
+    text-align: center;
+    font-size: 800px; 
+    margin-bottom: 20px;
+}
+
+/* Loader animation */
+.loader {
+    border: 15px solid rgba(255, 255, 255, 0.3);
+    border-top: 15px solid #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 .container {
     position: relative;
     width: 100%;
@@ -264,7 +308,6 @@ header ul li a {
     align-items: flex-start;
     justify-content: center;
     position: relative;
-
     width: auto;
     height: 40vh;
     overflow: hidden;
@@ -319,9 +362,10 @@ header ul li a {
     top: 60%;
     left: 10%;
     right: 10%;
+    text-align: justify;
     font-size: 15px;
     line-height: 20px;
-    padding-top: 10px;
+    padding-top: 15px;
     z-index: 1;
     color: gray;
     max-width: 80%;
