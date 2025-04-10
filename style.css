@@ -28,8 +28,9 @@ html {
 /* Loader heading */
 .preloader h1 {
     text-align: center;
-    font-size: 800px; 
-    margin-bottom: 20px;
+    font-size: 800px;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
 /* Loader animation */
@@ -46,12 +47,11 @@ html {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
-
-
 
 .container {
     position: relative;
@@ -102,7 +102,7 @@ header ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     padding: 15px 15px;
     border-radius: 50px;
     background-color: rgba(0, 0, 69, 0.30);
@@ -184,16 +184,16 @@ header ul li a {
 }
 
 .hero-info h2 {
-    font-size: 30px;
+    font-size: 38px;
     max-width: 600px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 50px;
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
 .hero-info p {
-    font-size: 15px;
+    font-size: 18px;
     max-width: 500px;
     font-weight: 500;
     line-height: 20px;
@@ -768,10 +768,6 @@ footer {
     z-index: 999;
 }
 
-
-
-
-
 .button-box {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -804,5 +800,125 @@ footer {
     .back-vid {
         width: 100%;
         height: auto;
+    }
+}
+
+/*Mobile Responsive*/
+@media screen and (max-width: 700px) {
+    header {
+        position: fixed;
+        height: 50px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header .box-icons {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .blackhole-box video {
+        margin-top: -15%;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-info {
+        bottom: 5%;
+    }
+
+    .hero-info h1 {
+        font-size: 45px;
+    }
+
+    .hero-info h2 {
+        font-size: 30px;
+    }
+
+    .hero-model {
+        top: 12%;
+        right: 2%;
+        height: 400px;
+        width: 300px;
+    }
+
+    .animation-controls {
+        position: absolute;
+        top: 15%;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 0;
+        overflow: visible;
+    }
+
+    .animation-controls button {
+        padding: 8px 10px;
+        min-width: 80px;
+    }
+
+    .info-cards {
+        grid-template-columns: auto;
+    }
+
+    .card img {
+        height: 40%;
+        width: 100%;
+    }
+
+    .card h1 {
+        top: 48%
+    }
+
+    .card:nth-child(3) {
+        grid-column: span 2;
+        height: 600px;
+    }
+
+    .card:nth-child(4) h1 {
+        top: 60%;
+        text-wrap: pretty;
+    }
+
+    .card:nth-child(4) p {
+        text-wrap: pretty;
+        max-width: 300px;
+        text-align: left;
+    }
+
+
+    .my-projects {
+        margin-bottom: 1200px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-left: 5%;
+        gap: 30px
+    }
+
+    .project-info {
+        width: 85%;
+        max-width: 400px;
+    }
+
+    .project-info h1 {
+        text-wrap: pretty;
+        max-width: 400px;
+    }
+
+    .project-info p {
+        max-width: 400px;
     }
 }
