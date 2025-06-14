@@ -388,7 +388,6 @@ header ul li a {
     text-align: center;
 }
 
-
 .card:nth-child(4) {
     grid-column: span 2;
 }
@@ -404,8 +403,6 @@ header ul li a {
     object-fit: cover;
     border-radius: 20px;
 }
-
-
 
 /* Projects Section */
 
