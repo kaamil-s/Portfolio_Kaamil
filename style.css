@@ -321,13 +321,11 @@ header ul li a {
 }
 
 .card img {
-    width: 80%;
+    width: 100%;
     height: 50%;
     padding: 15px 20px;
-    object-fit: cover;
-    border-radius: 20px;
     mix-blend-mode: lighten;
-    opacity: 80%;
+    opacity: 90%;
     object-fit: scale-down;
 }
 
@@ -371,6 +369,13 @@ header ul li a {
     box-shadow: 0 0 15px lightgray;
 }
 
+.card:nth-child(1) img {
+    height: 50%;
+    width: 80%;
+    object-fit: cover;
+    opacity: 100%;
+}
+
 .card:nth-child(3) {
     grid-row: span 2;
     height: 85vh;
@@ -401,7 +406,6 @@ header ul li a {
     width: 80%;
     height: 50%;
     object-fit: cover;
-    border-radius: 20px;
 }
 
 /* Projects Section */
